@@ -1,0 +1,12 @@
+name: Base Workflow
+
+#Define en qué eventos se activará el workflow
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      # Un paso simple que solo imprime un mensaje en la consola
+      - name: Echo a message
+        run: echo "Workflow ejecutado sin instalar dependencias o ejecutar scripts específicos."
